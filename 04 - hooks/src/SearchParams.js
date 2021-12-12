@@ -3,9 +3,10 @@ import { useState } from "react";
 const SearchParams = () => {
   const [location, setLocation] = useState("Seattle, WA");
 
-  //   function updateLocation(e) {
-  //     setLocation(e.target.value);
-  //   }
+  // Non Destructured version
+  //   const locationTuple = useState("Seattle, WA");
+  //   const location = locationTuple[0];
+  //   const setLocation = locationTuple[1];
 
   return (
     <div className="search-params">
