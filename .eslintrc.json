@@ -1,6 +1,6 @@
 {
-  "extends": ["eslint:recommended", "prettier"],
-  "pluggins": [],
+  "extends": ["eslint:recommended"],
+  "plugins": [],
   "parserOptions": {
     "ecmaVersion": 2021,
     "sourceType": "module",
