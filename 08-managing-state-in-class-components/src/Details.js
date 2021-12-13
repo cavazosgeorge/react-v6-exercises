@@ -1,5 +1,30 @@
-const Details = () => {
-  return <h2>hi!</h2>;
-};
+import { Component } from "react";
+import { useParams } from "react-router-dom";
+
+class Details extends Component {
+  constructor() {
+    super();
+
+    this.state = { loading: true };
+  }
+  async componentDidMount() {
+    const res = await fetch(
+      `http://pets-v2.dev-apis.com/pets?id=${this.props.match.params.id}` // TODO: withRouter deprecated - Figure out useParams hook for props.match.params.id
+    );
+    const json = await res.json();
+    this.setState(
+      Object.assign(
+        {
+          loading: false,
+        },
+        json.pets[0]
+      )
+    );
+  }
+  render() {
+    console.log(this.state);
+    return <h2>Hi</h2>;
+  }
+}
 
 export default Details;
