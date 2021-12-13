@@ -5,7 +5,11 @@
       {
         "runtime": "automatic"
       }
-    ]
+    ],
+    "@babel/preset-env"
   ],
-  "plugins": [["@babel/transform-runtime"]]
+  "plugins": [
+    "@babel/transform-runtime",
+    "@babel/plugin-proposal-class-properties"
+  ]
 }
