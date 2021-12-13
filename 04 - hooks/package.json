@@ -29,7 +29,7 @@
     "parcel": "^1.12.3",
     "prettier": "^2.5.1"
   },
-  "browserlist": [
+  "browserslist": [
     "last 2 Chrome versions"
   ]
 }
