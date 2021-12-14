@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/plugin-proposal-private-methods": "^7.16.5",
     "@babel/runtime": "^7.16.3",
     "eslint": "^8.4.1",
     "react": "^17.0.1",
@@ -21,10 +22,10 @@
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.16.3",
-    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.5",
     "@babel/plugin-transform-runtime": "^7.16.4",
     "@babel/preset-env": "^7.16.4",
-    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-react": "^7.16.5",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
